@@ -5,7 +5,7 @@ p, h1, h2, h3, h4, h5, h6, button {
 body {
     background-color: #e1eeff;
     background-size: cover;
-    width: auto; 
+    width: auto;
     overflow-x: hidden;
     font-family: "Roboto", serif;
     margin: 0px;
@@ -29,6 +29,32 @@ body {
 .nav-content .nav-logo {
     height: 60px;
     margin: auto;
+}
+
+.nav-content nav ul li {
+    font-family: "Roboto", sans-serif;
+}
+
+.nav-content nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-content nav ul li a {
+  color: #000000;
+}
+
+.nav-content nav ul li:not(:last-child) {
+    margin-right: 10px;
 }
 
 .nav-logo {
@@ -66,7 +92,7 @@ body {
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: block;        
+        display: block;
         padding: 20px;
 }
 
