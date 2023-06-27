@@ -52,7 +52,6 @@ body {
 .profile {
     text-align: center;
     height: 320px;
-    margin-bottom: 50px;
 }
 
 .profile h1 {
@@ -103,9 +102,27 @@ body {
 .about-box {
     text-align: start;
     background-color: white;
-    padding: 2em 6em;
+    padding: 1em 3em;
     border-radius: 1em;
 }
 .about-box h1 i{
     font-weight: normal;
+}
+.hobby{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hobby-box{
+    text-align: start;
+    background-color: white;
+    padding: 2em 6em;
+    border-radius: 1em;
+}
+.hobby-img{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hobby-img img{
+    background-color: rgba(246, 216, 255, 0.844);
+    height: 100px;
 }
