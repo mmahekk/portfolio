@@ -15,14 +15,13 @@ def index():
 
     # Data for individual 1
     educations_sydney = [
-        {'title': 'Bachelor of Example',  'year': 'Insert Years',
+        {'title': 'Bachelor of Science, Double major in Computer Science and Biochemistry',  'year': '2018-2023',
          'institution': 'The University of British Columbia (UBC)'},
-        {'title': 'High School Diploma', 'year': 'Insert Years',
-         'institution': 'Example High School'}
+        {'title': 'High School Diploma', 'year': '2018',
+         'institution': 'BC High School'}
     ]
     experiences_sydney = [
-        {'title': 'Job Role', 'duration': 'Years', 'company': 'XYZ Company'},
-        {'title': 'Job Role', 'duration': 'Years', 'company': 'ABC Corporation'}
+         {'title': 'Production Engineering Fellow', 'duration': 'Jun 2023 - Sept 2023', 'company': 'MLH'}
     ]
 
     # Data for individual 2
