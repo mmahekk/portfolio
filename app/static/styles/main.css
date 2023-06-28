@@ -50,7 +50,7 @@ body {
 }
 
 .nav-content nav ul li a {
-  color: #000000;
+  color: #ffffff;
 }
 
 .nav-content nav ul li:not(:last-child) {
@@ -78,7 +78,8 @@ body {
 .profile {
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    /*Sydney old - justify-content: space-evenly;*/
 }
 
 .profile .name {
@@ -89,11 +90,14 @@ body {
 }
 .profile .ind{
     width: 50%;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .profile .mahek img{
     max-width: 100%;
-    max-height: 100%;
+    max-height: 110%;
     border-radius: 50%;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -103,10 +107,17 @@ body {
     padding: 20px;
     max-height: 90%;
     border-radius: 50%;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     background-color: rgba(255, 215, 255, 0.772);
+}
+.profile .sydney {
+    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
+}
+.profile .mahek {
+    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
 }
 .profile .profile-picture {
     margin-bottom: 30px;
@@ -152,21 +163,75 @@ body {
 .about-box span{
     font-weight: normal;
 }
-.hobby{
+.hobby {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; 
+    align-items: center; 
 }
-.hobby-box{
-    text-align: start;
+
+.hobby-box {
+    text-align: center; 
     background-color: white;
-    padding: 2em 6em;
+    padding: 1em 2em; 
     border-radius: 1em;
+    width: 50%;
+    margin: 0 auto; 
 }
-.hobby-img{
+
+.hobby-img {
     display: flex;
-    justify-content: space-evenly;
-}
-.hobby-img img{
+    justify-content: center; 
+
+.hobby-img img {
     background-color: rgba(246, 216, 255, 0.844);
     height: 100px;
+}
+
+.degree {
+    font-weight: bold;
+}
+
+.section-title {
+    margin-bottom: 10px;
+}
+
+.about-box {
+    margin-bottom: 40px;
+}
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.map-box {
+    text-align: start;
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 1em;
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.map-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.map-box img {
+  max-width: 80%;
+}
+
+/* Adjustments for responsive layout */
+@media screen and (max-width: 768px) {
+  .map-box {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .map-box h2 {
+    font-size: 20px;
+  }
 }

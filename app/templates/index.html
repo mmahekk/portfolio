@@ -37,28 +37,54 @@
                 <img src="./static/img/dolphin.png">
             </div>
             <h1 class = "name">Sydney</h1>
-            <p class="bio">Hello! My name is Sydney, and I am a excited to learn about production engineering this summer!</p>
+            <p class="bio">Hello! My name is Sydney, and I am excited to learn about production engineering this summer!</p>
 
             <div class="about">
                 <div class="about-box">
-                    <h1>Education: <span>The University of British Columbia (UBC)</span></h1>
-                    <h1>Country: <span>Canada</span></h1>
-                    <h1>Interest: <span></span></h1>
+                    <div class="education-box">
+                        <h1 class="section-title">Education:</h1>
+                        {% for education in educations_sydney %}
+                        <h2><span class="university">{{ education.institution }}</span> - {{ education.title }}</h2>
+                        <p><i>{{ education.year }}</i></p>
+                        {% endfor %}
+                    </div>
+
+                    <div class="work-experience-box">
+                        <h1 class="section-title">Work Experience:</h1>
+                        {% for experience in experiences_sydney %}
+                        <h2>{{ experience.title }}</h2>
+                        <p>{{ experience.company }}</p>
+                        <p><i>{{ experience.duration }}</i></p>
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
+</div>
         </div>
         <div class = "mahek ind">
             <div id="profile-picture" class="profile-picture mahek">
-                <img src="./static/img/logo.jpg">
+                <img src="./static/img/butterfly.png">
             </div>
             <h1 class = "name">Mahek</h1>
-            <p class="bio">Hello! My name is Mahek, and <i>insert short biography here</i></p>
+            <p class="bio">Hi, I'm Mahek! I'm a 2nd year CS student interested in AI and machine learning!</p>
 
             <div class="about">
                 <div class="about-box">
-                    <h1>Education: <i>insert text here</i></h1>
-                    <h1>Country: <i>insert text here</i></h1>
-                    <h1>Interest: <i>insert text here</i></h1>
+                    <div class="education-box">
+                        <h1 class="section-title">Education:</h1>
+                        {% for education in educations_mahek %}
+                        <h2><span class="university">{{ education.institution }}</span> - {{ education.title }}</h2>
+                        <p><i>{{ education.year }}</i></p>
+                        {% endfor %}
+                    </div>
+
+                    <div class="work-experience-box">
+                        <h1 class="section-title">Work Experience:</h1>
+                        {% for experience in experiences_mahek %}
+                        <h2>{{ experience.title }}</h2>
+                        <p>{{ experience.company }}</p>
+                        <p><i>{{ experience.duration }}</i></p>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
