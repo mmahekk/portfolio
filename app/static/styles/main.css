@@ -170,3 +170,15 @@ body {
     background-color: rgba(246, 216, 255, 0.844);
     height: 100px;
 }
+
+.degree {
+    font-weight: bold;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.about-box {
+    margin-bottom: 40px;
+}
