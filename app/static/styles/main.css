@@ -79,6 +79,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    /*Sydney old - justify-content: space-evenly;*/
 }
 
 .profile .name {
@@ -91,7 +92,6 @@ body {
     width: 50%;
     margin-top: 0;
     margin-bottom: 10px;
-
 }
 .profile .mahek img{
     max-width: 100%;
