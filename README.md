@@ -1,4 +1,4 @@
-# Mahek Cheema - Portfolio Site
+# Mahek Cheema - Portfolio Site ☆
 
 ## Installation
 
