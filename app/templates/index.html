@@ -21,48 +21,12 @@
 
 <body>
     <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-            {% include 'menu.html' %}
-        </div>
+        {% include 'menu.html' %}
     </header>
-    <h1 class="section">About us</h1>
+    <h1 class="section">About Me</h1>
     <div class="profile">
-        <div class="sydney ind">
-            <div id="profile-picture" class="profile-picture prof-pic sydney">
-                <img src="./static/img/dolphin.png">
-            </div>
-            <h1 class="name">Sydney</h1>
-            <p class="bio">Hello! My name is Sydney, and I am excited to learn about production engineering this summer!
-            </p>
-
-            <div class="about">
-                <div class="about-box">
-                    <div class="education-box">
-                        <h1 class="section-title">Education:</h1>
-                        {% for education in educations_sydney %}
-                        <h2><span class="university">{{ education.institution }}</span> - {{ education.title }}</h2>
-                        <p><i>{{ education.year }}</i></p>
-                        {% endfor %}
-                    </div>
-
-                    <div class="work-experience-box">
-                        <h1 class="section-title">Work Experience:</h1>
-                        {% for experience in experiences_sydney %}
-                        <h2>{{ experience.title }}</h2>
-                        <p>{{ experience.company }}</p>
-                        <p><i>{{ experience.duration }}</i></p>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="mahek ind">
-            <div id="profile-picture" class="profile-picture prof-pic mahek">
+            <div id="profile-picture" class="profile-picture mahek">
                 <img src="./static/img/butterfly.png">
             </div>
             <h1 class="name">Mahek</h1>
