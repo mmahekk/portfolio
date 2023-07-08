@@ -3,7 +3,7 @@ p, h1, h2, h3, h4, h5, h6, button {
 }
 
 body {
-    background-color: #e1eeff;
+    background-color: #fce6f3;
     background-size: cover;
     width: auto;
     overflow-x: hidden;
@@ -14,10 +14,10 @@ body {
 .nav-bar {
     width: 100%;
     display: inline-block;
-    background-color: #1C539F;
+    background-color: #e0b4ce;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .nav-content .logo-touch-target {
@@ -36,23 +36,30 @@ body {
 }
 
 .nav-content nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align menu to the right */
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
 }
-.section{
+
+.section {
     text-align: center;
 }
+
 .nav-content nav ul li a {
   color: #ffffff;
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  height: 100%; /* Occupy full height of the navigation bar */
 }
 
 .nav-content nav ul li:not(:last-child) {
@@ -81,21 +88,22 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    /*Sydney old - justify-content: space-evenly;*/
 }
 
 .profile .name {
-        font-size: 50px;
-        font-weight: 700;
-        color: black;
-        margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
 }
-.profile .ind{
+
+.profile .ind {
     width: 50%;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.profile .mahek img{
+
+.profile .mahek img {
     max-width: 100%;
     max-height: 110%;
     border-radius: 50%;
@@ -103,24 +111,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    background-color: rgba(199, 202, 255, 0.772);
+    background-color: #f2cbe2;
 }
-.profile .sydney img{
-    padding: 10px;
-    max-height: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background-color: rgba(255, 215, 255, 0.772);
-}
-.profile .sydney {
-    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
-}
-.profile .mahek {
-    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
-}
+
 .profile .profile-picture {
     margin-bottom: 30px;
     height: 200px;
@@ -133,8 +126,8 @@ body {
 }
 
 .banner .logo {
-    max-width:180px;
-    max-height:60px;
+    max-width: 180px;
+    max-height: 60px;
     width: auto;
     height: auto;
 }
@@ -144,13 +137,16 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
-.bio{
+
+.bio {
     margin-top: 0.5em;
 }
+
 .about {
     display: flex;
     justify-content: center;
 }
+
 .about-box {
     text-align: start;
     background-color: white;
@@ -159,31 +155,35 @@ body {
     width: 75%;
     margin: 0;
 }
-.about-box h1 i{
+
+.about-box h1 i {
     font-weight: normal;
 }
-.about-box span{
+
+.about-box span {
     font-weight: normal;
 }
+
 .hobby {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .hobby-box {
-    text-align: center; 
+    text-align: center;
     background-color: white;
-    padding: 1em 2em; 
+    padding: 1em 2em;
     border-radius: 1em;
     width: 50%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .hobby-img {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
+
 .hobby-img img {
     background-color: rgba(246, 216, 255, 0.844);
     height: 100px;
@@ -202,49 +202,38 @@ body {
 }
 
 .map-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-.profile .sydney .map{
-    width: 85%;
-    background-color: black;
-    border-radius: 0;
-    padding: 0.1em;
-}
-.profile .mahek .map{
-    width: 85%;
-    background-color: black;
-    border-radius: 0;
-    padding: 0.1em;
-}
+
 .map-box {
     text-align: start;
     background-color: white;
     padding: 1em 2em;
     border-radius: 1em;
-    width: 80%; 
-    margin: 0 auto; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .map-box h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .map-box img {
-  max-width: 80%;
+    max-width: 80%;
 }
 
 /* Adjustments for responsive layout */
 @media screen and (max-width: 768px) {
-  .map-box {
-    width: 50%;
-    padding: 10px;
-  }
+    .map-box {
+        width: 50%;
+        padding: 10px;
+    }
 
-  .map-box h2 {
-    font-size: 20px;
-  }
+    .map-box h2 {
+        font-size: 20px;
+    }
 }
