@@ -13,16 +13,6 @@ def index():
         {'title': 'Hobbies', 'url': '/hobbies'}
     ]
 
-    # Data for individual 1
-    educations_sydney = [
-        {'title': 'Bachelor of Science, Double major in Computer Science and Biochemistry',  'year': '2018-2023',
-         'institution': 'The University of British Columbia (UBC)'},
-        {'title': 'High School Diploma', 'year': '2018',
-         'institution': 'BC High School'}
-    ]
-    experiences_sydney = [
-         {'title': 'Production Engineering Fellow', 'duration': 'Jun 2023 - Sept 2023', 'company': 'MLH'}
-    ]
 
     # Data for individual 2
     educations_mahek = [
@@ -36,8 +26,7 @@ def index():
         {'title': 'Finance Associate Coordinator', 'duration': 'Mar 2023 - Jun 2023', 'company': 'Pepsico'}
     ]
 
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), pages=pages,
-                           educations_sydney=educations_sydney, experiences_sydney=experiences_sydney,
+    return render_template('index.html', title="Mahek Cheema", url=os.getenv("URL"), pages=pages,
                            educations_mahek=educations_mahek, experiences_mahek=experiences_mahek)
 
 
