@@ -1,4 +1,5 @@
 # Mahek Cheema - Portfolio Site ☆
+![image](https://github.com/mmahekk/portfolio/assets/96924464/45006c04-ebd6-4d8a-beae-d22daefe5d84)
 
 ## Installation
 
