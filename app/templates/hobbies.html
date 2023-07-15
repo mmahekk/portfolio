@@ -8,7 +8,7 @@
     <meta property="og:title" content="Personal Portfolio">
     <meta property="og:description" content="My Personal Portfolio">
     <meta property="og:url" content="{{ url }}">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -17,30 +17,28 @@
     <title>{{ title }}</title>
 </head>
 
-<body>
+<body class="hobbies-page">
     <header class="nav-bar">
         {% include 'menu.html' %}
     </header>
-    <h1 class="section">Hobbies</h1>
-    <div class="profile">
-        <div class="mahek ind">
-            <div id="profile-picture" class="profile-picture mahek">
-                <img src="./static/img/butterfly.png">
-            </div>
-            <h1 class="name">Mahek</h1>
-            <div class="about">
-                <div class="about-box">
-                    <div class="hobby-img">
-                        <img src="./static/img/makeup.png">
-                        <img src="./static/img/grand-piano.png">
-                        <img src="./static/img/gamer.png">
-                    </div>
-                    <h2>Mahek's Map</h2>
-                    <img class="map" src="./static/img/mahek-map.png">
-                </div>
-            </div>
-        </div>
-    </div>
+    <section id="hobbies" class="section">
+      <h1 class="hobby-title">Hobbies</h1>
+      <div class="profile">
+          <div class="mahek ind">
+              <div class="hobby">
+                  <div class="hobby-box">
+                      <div class="hobby-img">
+                          <img src="./static/img/makeup.png">
+                          <img src="./static/img/grand-piano.png">
+                          <img src="./static/img/gamer.png">
+                      </div>
+                      <h2>Mahek's Map</h2>
+                      <img class="map" src="./static/img/mahek-map.png">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
 </body>
 
 </html>
