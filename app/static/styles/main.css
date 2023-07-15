@@ -148,19 +148,6 @@ body {
     margin-bottom: 10px;
 }
 
-.profile .mahek img {
-    max-width: 100%;
-    max-height: 170%;
-    border-radius: 100%;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    background-color: #f2cbe2;
-    margin-bottom: 190px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    animation: floatAnimation 3s infinite alternate;
-}
 @keyframes floatAnimation {
   0% {
     transform: translateY(0);
@@ -204,15 +191,6 @@ body {
 .about-box p {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-}
-
-.about-box {
-    text-align: start;
-    background-color: white;
-    padding: 1em 3em;
-    border-radius: 1em;
-    width: 90%;
-    position: relative;
 }
 
 .about-box {
@@ -271,13 +249,6 @@ body.hobbies-page {
     font-weight: bold;
 }
 
-.about-title {
-    margin-bottom: 10px;
-    margin-top: 100px;
-    margin-left: -225px;
-    font-family: 'Poppins', sans-serif;
-}
-
 .map-container {
     display: flex;
     flex-wrap: wrap;
@@ -314,7 +285,6 @@ body.hobbies-page {
   animation: gradient 7s ease infinite;
   overflow: hidden; /* Hide overflowing content */
   padding-bottom: 20px;
-  margin-top: -10px
 }
 
 .typing-content {
@@ -323,24 +293,165 @@ body.hobbies-page {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
+  margin-top: -10px;
 }
 
-.typing-content h1:nth-child(1) {
-  color: #aaa1c8;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  margin: 0;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 250px;
-  text-align: center;
-  animation: type 2s steps(40,end) forwards;
-  margin-top: 400px;
- }
+@media screen and (max-width: 1440px) {
+    .typing-content h1:nth-child(1) {
+      color: #aaa1c8;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      margin: 0;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 250px;
+      text-align: center;
+      animation: type 2s steps(40,end) forwards;
+      margin-top: 275px;
+     }
+
+    .bunny-border {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      top: 60%;
+      z-index: 1;
+    }
+    .about-title {
+      margin-bottom: 10px;
+      margin-top: -85px;
+      margin-left: -260px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .about-box {
+      text-align: start;
+      background-color: white;
+      padding: 1em 3em;
+      border-radius: 1em;
+      width: 200%;
+      position: relative;
+      margin-right: -200px;
+    }
+
+    .profile .mahek img {
+      max-width: 200%;
+      max-height: 200%;
+      border-radius: 100%;
+      margin-bottom: 10px;
+      margin-left: -150px;
+      margin-right: auto;
+      display: block;
+      background-color: #f2cbe2;
+      margin-bottom: 190px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      animation: floatAnimation 3s infinite alternate;
+    }
+
+    .resume-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      margin-left: -370px;
+      margin-bottom: 10px;
+    }
+
+    .about-content {
+      margin-left: -20px;
+      }
+
+    .blog-card{
+      position: absolute;
+      height: 370px;
+      width: 95%;
+      max-width: 850px;
+      margin: auto;
+      border-radius: 25px;
+      background: white;
+      box-shadow: 0px 10px 50px rgba(138, 40, 70,.5);
+      margin-top: 90px;
+      }
+}
+
+@media screen and (min-width: 1441px) {
+    .typing-content h1:nth-child(1) {
+      color: #aaa1c8;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      margin: 0;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 250px;
+      text-align: center;
+      animation: type 2s steps(40,end) forwards;
+      margin-top: 400px;
+     }
+    .bunny-border {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      top: 70%;
+      z-index: 1;
+    }
+    .about-title {
+      margin-bottom: 10px;
+      margin-top: 100px;
+      margin-left: -225px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .about-box {
+      text-align: start;
+      background-color: white;
+      padding: 1em 3em;
+      border-radius: 1em;
+      width: 90%;
+      position: relative;
+    }
+
+    .profile .mahek img {
+      max-width: 100%;
+      max-height: 170%;
+      border-radius: 100%;
+      margin-bottom: 10px;
+      margin-left: -150px;
+      margin-right: auto;
+      display: block;
+      background-color: #f2cbe2;
+      margin-bottom: 190px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      animation: floatAnimation 3s infinite alternate;
+    }
+
+    .resume-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      margin-left: -300px;
+    }
+
+    .blog-card{
+      position: absolute;
+      height: 370px;
+      width: 95%;
+      max-width: 850px;
+      margin: auto;
+      border-radius: 25px;
+      background: white;
+      box-shadow: 0px 10px 50px rgba(138, 40, 70,.5);
+      margin-top: 60px;
+    }
+}
 
 .typing-content h1:nth-child(2) {
   opacity: 0;
@@ -357,16 +468,6 @@ body.hobbies-page {
   -webkit-text-fill-color: transparent;
   overflow: hidden;
   animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-}
-
-.bunny-border {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  top: 70%;
-  z-index: 1;
 }
 
 .bunny-border img {
@@ -460,13 +561,6 @@ body.hobbies-page {
 
 .profile-picture {
   margin-right: 20px;
-}
-
-.resume-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  margin-left: -300px;
 }
 
 .resume-box {
@@ -624,17 +718,6 @@ div .dot {
   background-color: #dbafd3;
 }
 
-.blog-card{
-  position: absolute;
-  height: 370px;
-  width: 95%;
-  max-width: 850px;
-  margin: auto;
-  border-radius: 25px;
-  background: white;
-  box-shadow: 0px 10px 50px rgba(138, 40, 70,.5);
-  margin-top: 60px;
-}
 .inner-part{
   position: absolute;
   display: flex;
