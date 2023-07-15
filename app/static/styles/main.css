@@ -206,45 +206,6 @@ body.hobbies-page {
     height: 90vh;
 }
 
-.hobby {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hobby-title{
-    text-align: center;
-    margin-top: 100px;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.hobby-box {
-    text-align: center;
-    background-color: white;
-    padding: 1em 2em;
-    border-radius: 1em;
-    width: 50%;
-    margin: 0 auto;
-    height: 500px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.hobby-img {
-    display: flex;
-    justify-content: center;
-}
-
-.hobby-img img {
-    background-color: rgba(246, 216, 255, 0.844);
-    height: 100px;
-}
-
-.hobby-box h2 {
-  margin-top: -120px; /* Adjust the value as needed */
-  font-family: 'Poppins', sans-serif;
-}
-
 .degree {
     font-weight: bold;
 }
@@ -377,6 +338,44 @@ body.hobbies-page {
       box-shadow: 0px 10px 50px rgba(138, 40, 70,.5);
       margin-top: 90px;
       }
+
+    .hobby {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hobby-title{
+      text-align: center;
+      margin-top: 100px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+   .hobby-box {
+      text-align: center;
+      background-color: white;
+      padding: 1em 2em;
+      border-radius: 1em;
+      width: 50%;
+      margin: 0 auto;
+      height: 500px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+   .hobby-img {
+      display: flex;
+      justify-content: center;
+    }
+
+   .hobby-img img {
+      background-color: rgba(246, 216, 255, 0.844);
+      height: 100px;
+   }
+
+   .hobby-box h2 {
+      margin-top: -120px; /* Adjust the value as needed */
+      font-family: 'Poppins', sans-serif;
+   }
 }
 
 @media screen and (min-width: 1441px) {
@@ -456,6 +455,44 @@ body.hobbies-page {
     .about-content {
       margin-left: -20px;
       }
+
+    .hobby {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hobby-title{
+      text-align: center;
+      margin-top: 100px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hobby-box {
+      text-align: center;
+      background-color: white;
+      padding: 1em 2em;
+      border-radius: 1em;
+      width: 50%;
+      margin: 0 auto;
+      height: 500px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+   .hobby-img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hobby-img img {
+      background-color: rgba(246, 216, 255, 0.844);
+      height: 100px;
+    }
+
+    .hobby-box h2 {
+      margin-top: -120px; /* Adjust the value as needed */
+     font-family: 'Poppins', sans-serif;
+    }
 }
 
 .typing-content h1:nth-child(2) {
