@@ -6,9 +6,19 @@ services:
     restart: always
     env_file:
       - .env
-    environment:
-      - FLASK_ENV=development
     ports:
       - "9000:9000"
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: mysql
+    image: mariadb
+    restart: always
+    env_file:
+      - .env
     volumes:
-      - .:/myportfolio
+      - mydatabase:/var/lib/mysql
+
+volumes:
+  mydatabase:
